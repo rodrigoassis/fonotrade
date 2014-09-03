@@ -1,0 +1,400 @@
+pt-BR:
+  # pt-BR translations for Devise
+  devise:
+    confirmations:
+      confirmed: 'Sua conta foi confirmada com sucesso. Você está logado.'
+      send_instructions: 'Dentro de minutos, você receberá um e-mail com instruções para a confirmação da sua conta.'
+      send_paranoid_instructions: 'Se o seu endereço de e-mail estiver cadastrado, você receberá uma mensagem com instruções para confirmação da sua conta.'
+    failure:
+      already_authenticated: 'Você já está logado.'
+      inactive: 'Sua conta ainda não foi ativada.'
+      invalid: 'E-mail ou senha inválidos.'
+      invalid_token: 'O token de autenticação não é válido.'
+      locked: 'Sua conta está bloqueada.'
+      not_found_in_database: 'E-mail ou senha inválidos.'
+      timeout: 'Sua sessão expirou, por favor, efetue login novamente para continuar.'
+      unauthenticated: 'Para continuar, efetue login.'
+      unconfirmed: 'Antes de continuar, confirme a sua conta.'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instruções de confirmação'
+      reset_password_instructions:
+        subject: 'Instruções de troca de senha'
+      unlock_instructions:
+        subject: 'Instruções de desbloqueio'
+    omniauth_callbacks:
+      failure: 'Não foi possível autenticá-lo como %{kind} porque "%{reason}".'
+      success: 'Autenticado com sucesso com uma conta de %{kind}.'
+    passwords:
+      no_token: "Você só pode acessar essa página através de um e-mail de troca de senha. Se já estiver acessando por um e-mail, verifique se a URL fornecida está completa."
+      send_instructions: 'Dentro de minutos, você receberá um e-mail com instruções para a troca da sua senha.'
+      send_paranoid_instructions: 'Se o seu endereço de e-mail estiver cadastrado, você receberá um link de recuperação da senha via e-mail.'
+      updated: 'Sua senha foi alterada com sucesso. Você está logado.'
+      updated_not_active: 'Sua senha foi alterada com sucesso.'
+    registrations:
+      destroyed: 'Tchau! Sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve.'
+      signed_up: 'Login efetuado com sucesso. Se não foi autorizado, a confirmação será enviada por e-mail.'
+      signed_up_but_inactive: 'Você foi cadastrado com sucesso. No entanto, não foi possível efetuar login, pois sua conta não foi ativada.'
+      signed_up_but_locked: 'Você foi cadastrado com sucesso. No entanto, não foi possível efetuar login, pois sua conta está bloqueada.'
+      signed_up_but_unconfirmed: 'Uma mensagem com um link de confirmação foi enviada para o seu endereço de e-mail. Por favor, abra o link para confirmar a sua conta.'
+      update_needs_confirmation: 'Você atualizou a sua conta com sucesso, mas o seu novo endereço de e-mail precisa ser confirmado. Por favor, acesse-o e clique no link de confirmação que enviamos.'
+      updated: 'Sua conta foi atualizada com sucesso.'
+    sessions:
+      signed_in: 'Login efetuado com sucesso!'
+      signed_out: 'Saiu com sucesso.'
+    unlocks:
+      send_instructions: 'Dentro de minutos, você receberá um email com instruções para o desbloqueio da sua conta.'
+      send_paranoid_instructions: 'Se sua conta existir, você receberá um e-mail com instruções para desbloqueá-la em alguns minutos.'
+      unlocked: 'Sua conta foi desbloqueada com sucesso. Efetue login para continuar.'
+    invitations:
+      send_instructions: 'Um convite de email foi enviado para %{email}.'
+      invitation_token_invalid: 'O token de convite fornecido não é válido!'
+      updated: 'Sua senha foi configurada corretamente. Você está logado.'
+      no_invitations_remaining: "Nenhum convite restante"
+      invitation_removed: 'Seu convite foi removido.'
+      new:
+        header: "Enviar convite"
+        submit_button: "Enviar um convite"
+      edit:
+        header: "Configure a sua senha"
+        submit_button: "Configurar a minha senha"
+    mailer:
+      invitation_instructions:
+        subject: 'Instruções de convite'
+
+  errors: &errors
+    format: "Campo '%{attribute}' %{message}"
+    messages:
+      already_confirmed: "já foi confirmado"
+      confirmation_period_expired: "precisa ser confirmada em até %{period}, por favor, solicite uma nova"
+      expired: "expirou, por favor, solicite uma nova"
+      not_found: "não encontrado"
+      not_locked: "não foi bloqueado"
+      not_saved:
+        one: "Não foi possível salvar %{resource}: 1 erro"
+        other: "Não foi possível salvar %{resource}: %{count} erros."
+      accepted: deve ser aceito
+      blank: não pode ficar em branco
+      confirmation: não está de acordo com a confirmação
+      empty: não pode ficar vazio
+      equal_to: deve ser igual a %{count}
+      even: deve ser par
+      exclusion: não está disponível
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: não é válido
+      less_than: deve ser menor que %{count}
+      less_than_or_equal_to: deve ser menor ou igual a %{count}
+      not_a_number: não é um número
+      not_an_integer: não é um número inteiro
+      odd: deve ser ímpar
+      record_invalid: 'A validação falhou: %{errors}'
+      taken: já está em uso
+      too_long: 'é muito longo (máximo: %{count})'
+      too_short: 'é muito curto (mínimo: %{count})'
+      wrong_length: não possui o tamanho esperado (%{count} caracteres)
+      wrong_format: 'deve ter o formato %{correct_format}'
+    template:
+      body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
+      header:
+        one: 'Não foi possível gravar %{model}: 1 erro'
+        other: 'Não foi possível gravar %{model}: %{count} erros.'
+
+  # pt-BR translations for Rails Admin
+  date:
+    abbr_day_names:
+    - Dom
+    - Seg
+    - Ter
+    - Qua
+    - Qui
+    - Sex
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+    day_names:
+    - Domingo
+    - Segunda
+    - Terça
+    - Quarta
+    - Quinta
+    - Sexta
+    - Sábado
+    formats:
+      default: ! '%d/%m/%Y'
+      long: ! '%d/%m/%Y'
+      short: ! '%d de %B'
+    month_names:
+    -
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: cerca de 1 hora
+        other: cerca de %{count} horas
+      about_x_months:
+        one: cerca de 1 mês
+        other: cerca de %{count} meses
+      about_x_years:
+        one: cerca de 1 ano
+        other: cerca de %{count} anos
+      almost_x_years:
+        one: quase 1 ano
+        other: quase %{count} anos
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: mais de 1 ano
+        other: mais de %{count} anos
+      x_days:
+        one: 1 dia
+        other: ! '%{count} dias'
+      x_minutes:
+        one: 1 minuto
+        other: ! '%{count} minutos'
+      x_months:
+        one: 1 mês
+        other: ! '%{count} meses'
+      x_seconds:
+        one: 1 segundo
+        other: ! '%{count} segundos'
+  time:
+    am: ''
+    formats:
+      default: ! '%A, %d de %B de %Y, %H:%M:%S'
+      long: ! '%d de %B de %Y, %H:%M'
+      short: ! '%d/%m/%Y, %H:%M'
+    pm: ''
+  admin:
+    js:
+      true: "Verdadeiro"
+      false: "Falso"
+      is_present: "Está preenchido"
+      is_blank: "Está em branco"
+      date: "Data ..."
+      between_and_: "Entre ... e ..."
+      Between ... and ...: "Entre ... e ..." #this is a hack for a probably a bug on file rails_admin/app/assets/javascripts/rails_admin/ra.filter-box.js line 80
+      today: "Hoje"
+      yesterday: "Ontem"
+      this_week: "Esta semana"
+      last_week: "Última semana"
+      number: "Número ..."
+      Number ...: "Número ..." #this is a hack for a probably a bug on file rails_admin/app/assets/javascripts/rails_admin/ra.filter-box.js line 79
+      contains: "Contém"
+      is_exactly: "É igual"
+      starts_with: "Começa com"
+      ends_with: "Termina com"
+    loading: "Carregando..."
+    home:
+      name: Home
+    pagination:
+      previous: "&laquo; Anterior"
+      next: "Próximo &raquo;"
+      truncate: "…"
+    misc:
+      filter_date_format: "dd/mm/yy"
+      search: "Procurar"
+      filter: "Filtrar"
+      refresh: "Atualizar"
+      show_all: "Mostrar tudo"
+      add_filter: "Novo filtro"
+      bulk_menu_title: "Itens selecionados"
+      remove: "Remover"
+      add_new: "Criar Novo(a)"
+      chosen: "%{name} escolhido"
+      chose_all: "Escolher tudo"
+      clear_all: "Limpar tudo"
+      up: "Cima"
+      down: "Baixo"
+      navigation: "Menu"
+      log_out: "Logout"
+      ago: "atrás"
+    flash:
+      successful: "%{name} %{action} com sucesso"
+      error: "%{name} não foi %{action}"
+      noaction: "Nenhuma ação executada"
+      model_not_found: "Módulo '%{model}' não encontrado "
+      object_not_found: "%{model} com identificador '%{id}' não encontrado"
+    table_headers:
+      model_name: "Módulo"
+      last_used: "Última vez alterado em"
+      records: "Registros"
+      username: "Usuário"
+      changes: "Alterações"
+      created_at: "Data/Hora"
+      item: "Item"
+      message: "Mensagem"
+    actions:
+      invite:
+        title: "Convidar"
+        menu: "Convidar"
+        breadcrumb: "Convidar"
+        sent: "Convite enviado com sucesso"
+        done: "convidado"
+      dashboard:
+        title: "Dashboard"
+        menu: "Dashboard"
+        breadcrumb: "Dashboard"
+      index:
+        title: "Lista de %{model_label_plural}"
+        menu: "Lista"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "Detalhes para %{model_label} '%{object_label}'"
+        menu: "Mostrar"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Mostrar na aplicação"
+      create:
+        done: "Criado"
+      update:
+        done: "Atualizado"
+      destroyed:
+        done: "Removido"
+      new:
+        title: "Novo(a) %{model_label}"
+        menu: "Criar novo(a)"
+        breadcrumb: "Novo(a)"
+        link: "Criar novo(a) %{model_label}"
+        done: "criado(a)"
+      edit:
+        title: "Editar %{model_label} '%{object_label}'"
+        menu: "Editar"
+        breadcrumb: "Editar"
+        link: "Editar %{model_label}"
+        done: "atualizado(a)"
+      delete:
+        title: "Remover %{model_label} '%{object_label}'"
+        menu: "Remover"
+        breadcrumb: "Remover"
+        link: "Remover '%{object_label}'"
+        done: "removido(a)"
+      bulk_delete:
+        title: "Remover %{model_label_plural}"
+        menu: "Remover vários"
+        breadcrumb: "Remover vários"
+        bulk_link: "Remover %{model_label_plural} selecionados(as)"
+      export:
+        title: "Exportar %{model_label}"
+        menu: "Exportar"
+        breadcrumb: "Exportar"
+        link: "Exportar %{model_label_plural} encontrados"
+        bulk_link: "Exportar %{model_label_plural} selecionados(as)"
+        done: "exportados(as)"
+      inactivate_user:
+        bulk_link: "Inativar os %{model_label_plural} selecionados(as)"
+        bulk_delete: "Os %{model_label_plural} selecionados(as) foram inativados"
+        done: "inativado(os)"
+      history_index:
+        title: "Histórico para %{model_label_plural}"
+        menu: "Histórico"
+        breadcrumb: "Histórico"
+      history_show:
+        title: "Histórico para %{model_label} '%{object_label}'"
+        menu: "Histórico"
+        breadcrumb: "Histórico"
+    form:
+      cancel: "Cancelar"
+      basic_info: "Informação Básica"
+      required: "Obrigatório"
+      optional: "Opcional"
+      one_char: "caracter"
+      char_length_up_to: "comprimento até"
+      char_length_of: "comprimento de"
+      save: "Gravar"
+      save_and_add_another: "Gravar e criar outro(a)"
+      save_and_edit: "Gravar e editar"
+      all_of_the_following_related_items_will_be_deleted: "? Os seguintes item serão apagados ou deixados orfãos:"
+      are_you_sure_you_want_to_delete_the_object: "Tem a certeza que quer apagar este %{model_name}"
+      confirmation: "Sim, tenho a certeza"
+      delete_confirmation: "Confirmar apagar"
+      bulk_delete: "Os seguintes objetos serão apagados, o que pode apagar ou deixar orfãos as dependências relacionadas"
+      new_model: "%{name} novo(a)"
+    export:
+      confirmation: "Exportar para %{name}"
+      select: "Selecionar campos para exportar"
+      select_all_fields: "Selecione todos os campos"
+      fields_from: "Campos de %{name}"
+      fields_from_associated: "Campos associados com %{name}"
+      display: "Mostrar %{name}: %{type}"
+      options_for: "Opções para %{name}"
+      empty_value_for_associated_objects: "<vazio>"
+      click_to_reverse_selection: 'Click para inverter selecção'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Codificar para"
+        encoding_to_help: "Escolha a codificação. Deixe em branco para manter a codificação original: (%{name})"
+        skip_header: "Sem cabeçalho"
+        skip_header_help: "Não gerar cabeçalhos para (Campos sem cabeçalho)"
+        default_col_sep: ","
+        col_sep: "Separador de colunas"
+        col_sep_help: "Deixar em branco para usar omissão ('%{value}')" # value is default_col_sep
+  activemodel:
+    errors:
+      <<: *errors
+
+  # pt-BR translations for Activerecords Models
+  activerecord:
+    errors:
+      <<: *errors
+    models:
+      user:
+        one: "Usuário"
+        other: "Usuários"
+
+    attributes:
+      user:
+        email: "Email"
+        role: "Cargo"
+        name: "Nome"
+        active: "Ativo"
+        password: "Senha"
+        password_confirmation: "Confirmação de Senha"
+        reset_password_sent_at: "Senha Recuperada em"
+        remember_created_at: "Relebrar Senha em"
+        sign_in_count: "Número de logins"
+        current_sign_in_at: "Login atual"
+        last_sign_in_at: "Login anterior"
+        current_sign_in_ip: "IP atual"
+        last_sign_in_ip: "IP anterior"
+        invitation_created_at: "Convite criado em"
+        invitation_sent_at: "Convite enviado em"
+        invitation_accepted_at: "Convite aceito em"
+        invitations_count: "Contagem de convites"
+        invites: "Convites"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
