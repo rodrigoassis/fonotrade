@@ -1,6 +1,7 @@
 class Professional < ActiveRecord::Base
 
   has_many :plans, inverse_of: :professional, dependent: :destroy
+  has_many :experiences, inverse_of: :professional, dependent: :destroy
 
   validates :name, :email, :crfa, :cpf, :cep, :state, :city, :address, :neighborhood, presence: true
   validates :cep, format: { with: /\A\d{5}-\d{3}\z/, message: I18n.t('errors.messages.wrong_format', correct_format: '99999-999') }
@@ -8,6 +9,7 @@ class Professional < ActiveRecord::Base
   validates :cpf, :crfa, :email, uniqueness: true
 
   accepts_nested_attributes_for :plans, allow_destroy: true
+  accepts_nested_attributes_for :experiences, allow_destroy: true
 
   def city_enum
     I18n.t('cities')
@@ -31,6 +33,9 @@ class Professional < ActiveRecord::Base
 
     modal do
       configure :plans do
+        hide
+      end
+      configure :experiences do
         hide
       end
     end
