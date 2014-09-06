@@ -381,10 +381,14 @@ pt-BR:
       professional:
         one: "Profissional"
         other: "Profissionais"
+      plan:
+        one: "Plano"
+        other: "Planos"
 
     attributes:
       professional:
         name: Nome
+        plans: Planos
         cpf: CPF
         phone: Telefone
         email: Email
@@ -421,5 +425,10 @@ pt-BR:
         updated_at: "Atualizado em"
       specialty:
         name: "Nome"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      plan:
+        name: "Nome"
+        professional: "Profissional"
         created_at: "Criado em"
         updated_at: "Atualizado em"
