@@ -13,4 +13,17 @@ class Professional < ActiveRecord::Base
     I18n.t('states')
   end
 
+  rails_admin do
+    list do
+      field :active
+      field :name
+      field :email
+      field :cpf
+      field :crfa
+      field :state
+      field :city
+      field :neighborhood
+    end
+  end
+
 end
