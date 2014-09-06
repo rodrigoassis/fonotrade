@@ -1,0 +1,338 @@
+pt-BR:
+  states:
+    Rio de Janeiro: Rio de Janeiro
+    Acre: Acre
+    Alagoas: Alagoas
+    Amapá: Amapá
+    Amazonas: Amazonas
+    Bahia: Bahia
+    Ceará: Ceará
+    Distrito Federal: Distrito Federal
+    Espírito Santo: Espírito Santo
+    Goiás: Goiás
+    Maranhão: Maranhão
+    Mato Grosso: Mato Grosso
+    Mato Grosso do Sul: Mato Grosso do Sul
+    Minas Gerais: Minas Gerais
+    Pará: Pará
+    Paraíba: Paraíba
+    Paraná: Paraná
+    Pernambuco: Pernambuco
+    Piauí: Piauí
+    Rio Grande do Norte: Rio Grande do Norte
+    Rio Grande do Sul: Rio Grande do Sul
+    Rondônia: Rondônia
+    Roraima: Roraima
+    Santa Catarina: Santa Catarina
+    São Paulo: São Paulo
+    Sergipe: Sergipe
+    Tocantins: Tocantins
+
+  cities:
+    Rio de Janeiro: Rio de Janeiro
+    Niterói: Niterói
+    São Gonçalo: São Gonçalo
+    Duque de Caxias: Duque de Caxias
+    Mesquita: Mesquita
+    São João de Meriti: São João de Meriti
+    Campos dos Goytacazes: Campos dos Goytacazes
+    Angra dos Reis: Angra dos Reis
+    São Paulo: São Paulo
+    Salvador: Salvador
+    Brasília: Brasília
+    Fortaleza: Fortaleza
+    Belo Horizonte: Belo Horizonte
+    Manaus: Manaus
+    Curitiba: Curitiba
+    Recife: Recife
+    Porto Alegre: Porto Alegre
+    Belém: Belém
+    Goiânia: Goiânia
+    Guarulhos: Guarulhos
+    Campinas: Campinas
+    São Luís: São Luís
+    Maceió: Maceió
+    Teresina: Teresina
+    Natal: Natal
+    Nova Iguaçu: Nova Iguaçu
+    Campo Grande: Campo Grande
+    São Bernardo do Campo: São Bernardo do Campo
+    João Pessoa: João Pessoa
+    Santo André: Santo André
+    Osasco: Osasco
+    Jaboatão dos Guararapes: Jaboatão dos Guararapes
+    São José dos Campos: São José dos Campos
+    Ribeirão Preto: Ribeirão Preto
+    Uberlândia: Uberlândia
+    Contagem: Contagem
+    Sorocaba: Sorocaba
+    Aracaju: Aracaju
+    Feira de Santana: Feira de Santana
+    Cuiabá: Cuiabá
+    Juiz de Fora: Juiz de Fora
+    Joinville: Joinville
+    Londrina: Londrina
+    Ananindeua: Ananindeua
+    Belford Roxo: Belford Roxo
+    Aparecida de Goiânia: Aparecida de Goiânia
+    Caxias do Sul: Caxias do Sul
+    Porto Velho: Porto Velho
+    Florianópolis: Florianópolis
+    Santos: Santos
+    Mauá: Mauá
+    Vila Velha: Vila Velha
+    Serra: Serra
+    São José do Rio Preto: São José do Rio Preto
+    Macapá: Macapá
+    Mogi das Cruzes: Mogi das Cruzes
+    Diadema: Diadema
+    Campina Grande: Campina Grande
+    Carapicuíba: Carapicuíba
+    Betim: Betim
+    Olinda: Olinda
+    Jundiaí: Jundiaí
+    Piracicaba: Piracicaba
+    Montes Claros: Montes Claros
+    Maringá: Maringá
+    Cariacica: Cariacica
+    Bauru: Bauru
+    Rio Branco: Rio Branco
+    Anápolis: Anápolis
+    São Vicente: São Vicente
+    Pelotas: Pelotas
+    Vitória: Vitória
+    Caucaia: Caucaia
+    Canoas: Canoas
+    Itaquaquecetuba: Itaquaquecetuba
+    Franca: Franca
+    Caruaru: Caruaru
+    Ponta Grossa: Ponta Grossa
+    Blumenau: Blumenau
+    Vitória da Conquista: Vitória da Conquista
+    Paulista: Paulista
+    Ribeirão das Neves: Ribeirão das Neves
+    Uberaba: Uberaba
+    Petrópolis: Petrópolis
+    Santarém: Santarém
+    Petrolina: Petrolina
+    Guarujá: Guarujá
+    Cascavel: Cascavel
+    Boa Vista: Boa Vista
+    Taubaté: Taubaté
+    Limeira: Limeira
+    São José dos Pinhais: São José dos Pinhais
+    Governador Valadares: Governador Valadares
+    Suzano: Suzano
+    Praia Grande: Praia Grande
+    Santa Maria: Santa Maria
+    Mossoró: Mossoró
+    Volta Redonda: Volta Redonda
+    Foz do Iguaçu: Foz do Iguaçu
+    Gravataí: Gravataí
+    Várzea Grande: Várzea Grande
+    Juazeiro do Norte: Juazeiro do Norte
+    Imperatriz: Imperatriz
+    Taboão da Serra: Taboão da Serra
+    Camaçari: Camaçari
+    Sumaré: Sumaré
+    Barueri: Barueri
+    Embu das Artes: Embu das Artes
+    Ipatinga: Ipatinga
+    Viamão: Viamão
+    Novo Hamburgo: Novo Hamburgo
+    Marabá: Marabá
+    Palmas: Palmas
+    Magé: Magé
+    São Carlos: São Carlos
+    Itaboraí: Itaboraí
+    Marília: Marília
+    Sete Lagoas: Sete Lagoas
+    São Leopoldo: São Leopoldo
+    Arapiraca: Arapiraca
+    Divinópolis: Divinópolis
+    Colombo: Colombo
+    Jacareí: Jacareí
+    Americana: Americana
+    São José: São José
+    Maracanaú: Maracanaú
+    Araraquara: Araraquara
+    Itabuna: Itabuna
+    Presidente Prudente: Presidente Prudente
+    Macaé: Macaé
+    Santa Luzia: Santa Luzia
+    Parnamirim: Parnamirim
+    Indaiatuba: Indaiatuba
+    Cotia: Cotia
+    Itapevi: Itapevi
+    Juazeiro: Juazeiro
+    Rio Grande: Rio Grande
+    Dourados: Dourados
+    Alvorada: Alvorada
+    Rondonópolis: Rondonópolis
+    Hortolândia: Hortolândia
+    Criciúma: Criciúma
+    Cachoeiro de Itapemirim: Cachoeiro de Itapemirim
+    Sobral: Sobral
+    Rio Claro: Rio Claro
+    Cabo Frio: Cabo Frio
+    Cabo de Santo Agostinho: Cabo de Santo Agostinho
+    Passo Fundo: Passo Fundo
+    Ilhéus: Ilhéus
+    Chapecó: Chapecó
+    Itajaí: Itajaí
+    Nova Friburgo: Nova Friburgo
+    Araçatuba: Araçatuba
+    Santa Bárbara d'Oeste: Santa Bárbara d'Oeste
+    Barra Mansa: Barra Mansa
+    Rio Verde: Rio Verde
+    Luziânia: Luziânia
+    Castanhal: Castanhal
+    Guarapuava: Guarapuava
+    Teresópolis: Teresópolis
+    Lauro de Freitas: Lauro de Freitas
+    São José de Ribamar: São José de Ribamar
+    Nossa Senhora do Socorro: Nossa Senhora do Socorro
+    Águas Lindas de Goiás: Águas Lindas de Goiás
+    Ibirité: Ibirité
+    Nilópolis: Nilópolis
+    Lages: Lages
+    Timon: Timon
+    Caxias: Caxias
+    Francisco Morato: Francisco Morato
+    Itu: Itu
+    Parauapebas: Parauapebas
+    Itapecerica da Serra: Itapecerica da Serra
+    Poços de Caldas: Poços de Caldas
+    Jequié: Jequié
+    Araguaína: Araguaína
+    São Caetano do Sul: São Caetano do Sul
+    Pindamonhangaba: Pindamonhangaba
+    Bragança Paulista: Bragança Paulista
+    Parnaíba: Parnaíba
+    Camaragibe: Camaragibe
+    Itapetininga: Itapetininga
+    Jaraguá do Sul: Jaraguá do Sul
+    Alagoinhas: Alagoinhas
+    Linhares: Linhares
+    Abaetetuba: Abaetetuba
+    Paranaguá: Paranaguá
+    Patos de Minas: Patos de Minas
+    Teixeira de Freitas: Teixeira de Freitas
+    Queimados: Queimados
+    Barreiras: Barreiras
+    Palhoça: Palhoça
+    Mogi Guaçu: Mogi Guaçu
+    Teófilo Otoni: Teófilo Otoni
+    Valparaíso de Goiás: Valparaíso de Goiás
+    Santa Rita: Santa Rita
+    Franco da Rocha: Franco da Rocha
+    Jaú: Jaú
+    Sapucaia do Sul: Sapucaia do Sul
+    Pouso Alegre: Pouso Alegre
+    Vitória de Santo Antão: Vitória de Santo Antão
+    Garanhuns: Garanhuns
+    Botucatu: Botucatu
+    Porto Seguro: Porto Seguro
+    Atibaia: Atibaia
+    Barbacena: Barbacena
+    Sabará: Sabará
+    Uruguaiana: Uruguaiana
+    Abaetetuba: Abaetetuba
+    Varginha: Varginha
+    Crato: Crato
+    Apucarana: Apucarana
+    Cametá: Cametá
+    Santa Rita: Santa Rita
+    Resende: Resende
+    Toledo: Toledo
+    Araucária: Araucária
+    Araras: Araras
+    Simões Filho: Simões Filho
+    Cubatão: Cubatão
+    Santa Cruz do Sul: Santa Cruz do Sul
+    Cachoeirinha: Cachoeirinha
+    Codó: Codó
+    Pinhais: Pinhais
+    Bagé: Bagé
+    Ji-Paraná: Ji-Paraná
+    Maranguape: Maranguape
+    Conselheiro Lafaiete: Conselheiro Lafaiete
+    Itapipoca: Itapipoca
+    Bragança: Bragança
+    Sinop: Sinop
+    Ribeirão Pires: Ribeirão Pires
+    Catanduva: Catanduva
+    Campo Largo: Campo Largo
+    Barretos: Barretos
+    Guaratinguetá: Guaratinguetá
+    Araruama: Araruama
+    Colatina: Colatina
+    Sertãozinho: Sertãozinho
+    Araguari: Araguari
+    Itabira: Itabira
+    São Mateus: São Mateus
+    Santana de Parnaíba: Santana de Parnaíba
+    Votorantim: Votorantim
+    Birigui: Birigui
+    Paulo Afonso: Paulo Afonso
+    Jandira: Jandira
+    Marituba: Marituba
+    Balneário Camboriú: Balneário Camboriú
+    Tatuí: Tatuí
+    Bento Gonçalves: Bento Gonçalves
+    Várzea Paulista: Várzea Paulista
+    Valinhos: Valinhos
+    Passos: Passos
+    Rio das Ostras: Rio das Ostras
+    Salto: Salto
+    Brusque: Brusque
+    Guarapari: Guarapari
+    Paço do Lumiar: Paço do Lumiar
+    Vespasiano: Vespasiano
+    Trindade: Trindade
+    Arapongas: Arapongas
+    Açailândia: Açailândia
+    Corumbá: Corumbá
+    Coronel Fabriciano: Coronel Fabriciano
+    Almirante Tamandaré: Almirante Tamandaré
+    Ourinhos: Ourinhos
+    São Lourenço da Mata: São Lourenço da Mata
+    Parintins: Parintins
+    Igarassu: Igarassu
+    Três Lagoas: Três Lagoas
+    Ubá: Ubá
+    Itatiba: Itatiba
+    Santana: Santana
+    Caraguatatuba: Caraguatatuba
+    Muriaé: Muriaé
+    Umuarama: Umuarama
+    Patos: Patos
+    Formosa: Formosa
+    Bacabal: Bacabal
+    Barcarena: Barcarena
+    Bayeux: Bayeux
+    Altamira: Altamira
+    Planaltina de Goiás: Planaltina de Goiás
+    Paragominas: Paragominas
+    Itaituba: Itaituba
+    Tubarão: Tubarão
+    Ituiutaba: Ituiutaba
+    Tucuruí: Tucuruí
+    Cambé: Cambé
+    Iguatu: Iguatu
+    Erechim: Erechim
+    Itaperuna: Itaperuna
+    Açailândia: Açailândia
+    Guaíba: Guaíba
+    Assis: Assis
+    Novo Gama: Novo Gama
+    Lagarto: Lagarto
+    Barra do Piraí: Barra do Piraí
+    Abreu e Lima: Abreu e Lima
+    Araxá: Araxá
+    Piraquara: Piraquara
+    Breves: Breves
+    Lavras: Lavras
+    Leme: Leme
+    Santo Antônio de Jesus: Santo Antônio de Jesus
+    Ariquemes: Ariquemes

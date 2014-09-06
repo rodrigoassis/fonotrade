@@ -13,6 +13,11 @@ describe User do
     expect(FactoryGirl.build(:user, email: nil)).not_to be_valid
   end
 
+  it "has unique email" do
+    FactoryGirl.create(:user, email: 'abc@oib.com')
+    expect(FactoryGirl.build(:user, email: 'abc@oib.com')).not_to be_valid
+  end
+
   it "is invalid without password" do
     expect(FactoryGirl.build(:user, password: nil)).not_to be_valid
   end

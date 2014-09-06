@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   :recoverable, :rememberable, :trackable#, :validatable
 
   validates :name, :email, :password, :password_confirmation, presence: true
+  validates :email, uniqueness: true
   validates_confirmation_of :password
 
   rails_admin do
