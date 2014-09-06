@@ -16,3 +16,10 @@
 /tmp
 /config/database.yml
 /config/secret_token.rb
+
+# Test files
+/coverage/
+/spec/tmp/*
+
+# Merge diff files
+**.orig
