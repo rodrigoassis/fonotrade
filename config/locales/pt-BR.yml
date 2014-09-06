@@ -378,8 +378,26 @@ pt-BR:
       specialty:
         one: "Especialidade"
         other: "Especialidades"
+      professional:
+        one: "Profissional"
+        other: "Profissionais"
 
     attributes:
+      professional:
+        name: Nome
+        cpf: CPF
+        phone: Telefone
+        email: Email
+        crfa: CRFA
+        cep: CEP
+        state: Estado
+        city: Cidade
+        address: Endereço
+        complement: Complemento
+        neighborhood: Bairro
+        created_at: Criado em
+        updated_at: Atualizado em
+        active: Ativo
       user:
         email: "Email"
         role: "Cargo"
