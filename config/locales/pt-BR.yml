@@ -375,6 +375,9 @@ pt-BR:
       user:
         one: "Usuário"
         other: "Usuários"
+      specialty:
+        one: "Especialidade"
+        other: "Especialidades"
 
     attributes:
       user:
@@ -396,5 +399,9 @@ pt-BR:
         invitation_accepted_at: "Convite aceito em"
         invitations_count: "Contagem de convites"
         invites: "Convites"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      specialty:
+        name: "Nome"
         created_at: "Criado em"
         updated_at: "Atualizado em"
