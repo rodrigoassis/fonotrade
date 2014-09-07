@@ -382,16 +382,16 @@ pt-BR:
         one: "Profissional"
         other: "Profissionais"
       plan:
-        one: "Plano"
-        other: "Planos"
+        one: "Plano de Saúde"
+        other: "Planos de Saúde"
       experience:
-        one: "Experiência"
-        other: "Experiências"
+        one: "Curso"
+        other: "Cursos"
 
     attributes:
       professional:
         name: Nome
-        plans: Planos
+        plans: Planos de Saúde
         cpf: CPF
         phone: Telefone
         email: Email
@@ -405,6 +405,7 @@ pt-BR:
         created_at: Criado em
         updated_at: Atualizado em
         active: Ativo
+        experiences: Cursos Realizados
       user:
         email: "Email"
         role: "Cargo"
