@@ -8,8 +8,4 @@ describe Plan do
   it "is invalid without name" do
     expect(FactoryGirl.build(:plan, name: nil)).not_to be_valid
   end
-
-  it "is invalid without professional" do
-    expect(FactoryGirl.build(:plan, professional: nil)).not_to be_valid
-  end
 end
