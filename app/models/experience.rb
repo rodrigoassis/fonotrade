@@ -15,6 +15,7 @@ class Experience < ActiveRecord::Base
   end
 
   rails_admin do
+    visible false
     list do
       field :name
       field :professional

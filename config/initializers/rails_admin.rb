@@ -11,9 +11,6 @@ RailsAdmin.config do |config|
   end
   config.current_user_method(&:current_user)
 
-  config.excluded_models << "Course"
-  config.excluded_models << "Experience"
-
   ## == Cancan ==
   # config.authorize_with :cancan
 

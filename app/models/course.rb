@@ -3,9 +3,9 @@ class Course < ActiveRecord::Base
   has_many :experiences, inverse_of: :course
 
   validates :name, presence: true
-  validates :institution_id, presence: true
 
   rails_admin do
+    visible false
     list do
       field :name
       field :created_at
@@ -13,6 +13,11 @@ class Course < ActiveRecord::Base
     end
     edit do
       configure :experiences do
+        hide
+      end
+    end
+    modal do
+      configure :institution do
         hide
       end
     end
