@@ -1,6 +1,6 @@
 class Professional < ActiveRecord::Base
 
-  has_many :plans, dependent: :destroy
+  has_and_belongs_to_many :plans
   has_many :experiences, inverse_of: :professional, dependent: :destroy
 
   validates :name, :email, :crfa, :cpf, :cep, :state, :city, :address, :neighborhood, presence: true
@@ -8,7 +8,6 @@ class Professional < ActiveRecord::Base
   validates :cpf, format: { with: /\A\d{3}.\d{3}.\d{3}-\d{2}\z/, message: I18n.t('errors.messages.wrong_format', correct_format: '999.999.999-99') }
   validates :cpf, :crfa, :email, uniqueness: true
 
-  # accepts_nested_attributes_for :plans, allow_destroy: true
   accepts_nested_attributes_for :experiences, allow_destroy: true
 
   def city_enum

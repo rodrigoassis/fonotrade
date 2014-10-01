@@ -3,6 +3,5 @@
 FactoryGirl.define do
   factory :plan do
     name "MyString"
-    association :professional, factory: :professional
   end
 end
