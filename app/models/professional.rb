@@ -1,6 +1,7 @@
 class Professional < ActiveRecord::Base
 
   has_and_belongs_to_many :plans
+  has_and_belongs_to_many :specialties
   has_many :experiences, inverse_of: :professional, dependent: :destroy
 
   validates :name, :email, :crfa, :cpf, :cep, :state, :city, :address, :neighborhood, presence: true
