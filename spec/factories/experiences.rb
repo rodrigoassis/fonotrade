@@ -2,9 +2,8 @@
 
 FactoryGirl.define do
   factory :experience do
-    name "MyString"
     year 1990
-    institute "MyString"
+    association :course, factory: :course
     association :professional, factory: :professional
   end
 end
