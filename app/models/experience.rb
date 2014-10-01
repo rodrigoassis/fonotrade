@@ -17,7 +17,6 @@ class Experience < ActiveRecord::Base
   rails_admin do
     list do
       field :name
-      field :institution
       field :professional
       field :year
       field :created_at

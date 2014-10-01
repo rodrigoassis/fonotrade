@@ -385,8 +385,14 @@ pt-BR:
         one: "Plano de Saúde"
         other: "Planos de Saúde"
       experience:
+        one: "Experiência"
+        other: "Experiências"
+      course:
         one: "Curso"
         other: "Cursos"
+      institution:
+        one: "Instituição"
+        other: "Instituições"
 
     attributes:
       professional:
@@ -434,12 +440,26 @@ pt-BR:
       plan:
         name: "Nome"
         professional: "Profissional"
+        professionals: "Profissionais"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      institution:
+        name: "Nome"
+        active: "Ativa"
+        courses: "Cursos"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      course:
+        name: "Nome"
+        institution: "Instituição"
+        experiences: "Experiências"
         created_at: "Criado em"
         updated_at: "Atualizado em"
       experience:
         name: "Nome do Curso"
         professional: "Profissional"
+        course: "Curso"
         year: "Ano de Realização"
-        institute: "Instituição"
+        institution: "Instituição"
         created_at: "Criado em"
         updated_at: "Atualizado em"
