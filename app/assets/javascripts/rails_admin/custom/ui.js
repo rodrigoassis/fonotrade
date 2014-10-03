@@ -14,4 +14,9 @@ $(document).on('rails_admin.dom_ready', function(){
   // Mask for zip_code
   $("#professional_cep").mask("99999-999");
   $("#professional_cpf").mask("999.999.999-99");
+
+  $("#professional_state").prop('disabled', true);
+  $("#professional_city").prop('disabled', true);
+  $("#professional_address").prop('disabled', true);
+  $("#professional_neighborhood").prop('disabled', true);
 });

@@ -11,14 +11,6 @@ class Professional < ActiveRecord::Base
 
   accepts_nested_attributes_for :experiences, allow_destroy: true
 
-  def city_enum
-    I18n.t('cities')
-  end
-
-  def state_enum
-    I18n.t('states')
-  end
-
   rails_admin do
     list do
       field :active
@@ -31,6 +23,24 @@ class Professional < ActiveRecord::Base
       field :neighborhood
       field :created_at
       field :updated_at
+    end
+
+    edit do
+      field :active
+      field :name
+      field :cpf
+      field :crfa
+      field :email
+      field :phone
+      field :cep
+      field :state
+      field :city
+      field :address
+      field :neighborhood
+      field :complement
+      field :plans
+      field :specialties
+      field :experiences
     end
 
     modal do
