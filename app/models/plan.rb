@@ -10,6 +10,12 @@ class Plan < ActiveRecord::Base
       field :updated_at
     end
 
+    edit do
+      configure :professionals do
+        hide
+      end
+    end
+
     modal do
       configure :professionals do
         hide

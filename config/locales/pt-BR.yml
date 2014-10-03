@@ -403,6 +403,7 @@ pt-BR:
         email: Email
         crfa: CRFA
         cep: CEP
+        specialties: Especialidades
         state: Estado
         city: Cidade
         address: Endereço
@@ -460,6 +461,7 @@ pt-BR:
         professional: "Profissional"
         course: "Curso"
         year: "Ano de Realização"
+        comments: Observações
         institution: "Instituição"
         created_at: "Criado em"
         updated_at: "Atualizado em"

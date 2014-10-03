@@ -14,6 +14,10 @@ class Experience < ActiveRecord::Base
     course.institution
   end
 
+  def year_enum
+    (Date.today.year-20..Date.today.year).to_a.reverse
+  end
+
   rails_admin do
     visible false
     list do
@@ -22,6 +26,11 @@ class Experience < ActiveRecord::Base
       field :year
       field :created_at
       field :updated_at
+    end
+    nested do
+      configure :course do
+        inline_edit false
+      end
     end
   end
 end
