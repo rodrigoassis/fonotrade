@@ -16,6 +16,10 @@ class Institution < ActiveRecord::Base
       field :name
       field :courses do
         nested_form false
+        associated_collection_scope do
+          institution = bindings[:object]
+          Proc.new {|scope| scope.where(institution: [institution, nil])}
+        end
       end
     end
     modal do
