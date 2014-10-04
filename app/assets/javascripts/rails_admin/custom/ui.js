@@ -38,10 +38,10 @@ $(document).on('rails_admin.dom_ready', function(){
   $("#professional_cep").mask("99999-999");
   $("#professional_cpf").mask("999.999.999-99");
 
-  $("#professional_state").prop('disabled', true);
-  $("#professional_city").prop('disabled', true);
-  $("#professional_address").prop('disabled', true);
-  $("#professional_neighborhood").prop('disabled', true);
+  $("#professional_state").prop('readonly', true);
+  $("#professional_city").prop('readonly', true);
+  $("#professional_address").prop('readonly', true);
+  $("#professional_neighborhood").prop('readonly', true);
 
   $("#professional_cep").blur(function() {
     if ($("#professional_cep").prop('value') == '') {
