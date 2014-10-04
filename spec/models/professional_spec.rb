@@ -17,6 +17,10 @@ describe Professional do
     expect(FactoryGirl.build(:professional, cpf: nil)).to_not be_valid
   end
 
+  it "is invalid without complement" do
+    expect(FactoryGirl.build(:professional, complement: nil)).to_not be_valid
+  end
+
   it "is invalid for invalid CEP format" do
     expect(FactoryGirl.build(:professional, cep: "string").valid?).to equal(false)
     expect(FactoryGirl.build(:professional, cep: "123-0989").valid?).to equal(false)
@@ -25,22 +29,6 @@ describe Professional do
   it "is invalid for invalid CPF format" do
     expect(FactoryGirl.build(:professional, cpf: "string")).to_not be_valid
     expect(FactoryGirl.build(:professional, cpf: "124.206.717-59")).to be_valid
-  end
-
-  it "can retrieve states" do
-    professional = FactoryGirl.create(:professional)
-    expect(professional.state_enum).to_not be_nil
-    expect(professional.state_enum).to have_key :'Rio de Janeiro'
-    expect(professional.state_enum).to have_key :'São Paulo'
-    expect(professional.state_enum).to have_key :'Maranhão'
-  end
-
-  it "can retrieve cities" do
-    professional = FactoryGirl.create(:professional)
-    expect(professional.city_enum).to_not be_nil
-    expect(professional.city_enum).to have_key :'Rio de Janeiro'
-    expect(professional.city_enum).to have_key :'Niterói'
-    expect(professional.city_enum).to have_key :'São João de Meriti'
   end
 
 end

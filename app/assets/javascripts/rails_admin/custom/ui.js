@@ -7,6 +7,29 @@ f!==d.val()&&d.val(f);!a||65===b&&c.ctrlKey||d.setCaret(e);return d.callbacks(c)
 (l+=m);e+=m}}a=h.charAt(n);p!==s+1||k.translation[a]||b.push(a);return b.join("")},callbacks:function(c){var b=d.val(),g=d.val()!==x;if(!0===g&&"function"===typeof f.onChange)f.onChange(b,c,a,f);if(!0===g&&"function"===typeof f.onKeyPress)f.onKeyPress(b,c,a,f);if("function"===typeof f.onComplete&&b.length===h.length)f.onComplete(b,c,a,f)}};k.remove=function(){d.destroyEvents();d.val(k.getCleanVal()).removeAttr("maxlength")};k.getCleanVal=function(){return d.getMasked(!0)};k.init()};g.fn.mask=function(a,
 h){return this.each(function(){g(this).data("mask",new y(this,a,h))})};g.fn.unmask=function(){return this.each(function(){try{g(this).data("mask").remove()}catch(a){}})};g.fn.cleanVal=function(){return g(this).data("mask").getCleanVal()};g("*[data-mask]").each(function(){var a=g(this),h={};"true"===a.attr("data-mask-reverse")&&(h.reverse=!0);"false"===a.attr("data-mask-maxlength")&&(h.maxlength=!1);a.mask(a.attr("data-mask"),h)})})(window.jQuery||window.Zepto);
 
+function fill_address_info(data) {
+  $("#professional_state").prop('value', data.estado);
+  $("#professional_city").prop('value', data.cidade);
+  $("#professional_address").prop('value', data.tipoDeLogradouro + ' ' + data.logradouro);
+  $("#professional_neighborhood").prop('value', data.bairro);
+  hide_address_error();
+};
+
+function clear_address_info() {
+  $("#professional_state").prop('value', '');
+  $("#professional_city").prop('value', '');
+  $("#professional_address").prop('value', '');
+  $("#professional_neighborhood").prop('value', '');
+};
+
+function hide_address_error() {
+  $("#professional_cep_field").removeClass('error');
+}
+
+function display_address_error() {
+  $("#professional_cep_field").addClass('error');
+  clear_address_info();
+};
 
 // jQuery document ready
 $(document).on('rails_admin.dom_ready', function(){
@@ -19,4 +42,20 @@ $(document).on('rails_admin.dom_ready', function(){
   $("#professional_city").prop('disabled', true);
   $("#professional_address").prop('disabled', true);
   $("#professional_neighborhood").prop('disabled', true);
+
+  $("#professional_cep").blur(function() {
+    if ($("#professional_cep").prop('value') == '') {
+      display_address_error();
+    } else {
+      $.ajax({
+        url: 'http://correiosapi.apphb.com/cep/' + $("#professional_cep").prop('value').replace('-', ''),
+        dataType: 'jsonp',
+        crossDomain: true,
+        contentType: "application/json",
+        success: function(data) { fill_address_info(data); },
+        error: function() { display_address_error(); }
+      });
+    }
+  });
+
 });

@@ -4,7 +4,7 @@ class Professional < ActiveRecord::Base
   has_and_belongs_to_many :specialties
   has_many :experiences, inverse_of: :professional, dependent: :destroy
 
-  validates :name, :email, :crfa, :cpf, :cep, :state, :city, :address, :neighborhood, presence: true
+  validates :name, :email, :crfa, :cpf, :cep, :state, :city, :address, :neighborhood, :complement, presence: true
   validates :cep, format: { with: /\A\d{5}-\d{3}\z/, message: I18n.t('errors.messages.wrong_format', correct_format: '99999-999') }
   validates :cpf, format: { with: /\A\d{3}.\d{3}.\d{3}-\d{2}\z/, message: I18n.t('errors.messages.wrong_format', correct_format: '999.999.999-99') }
   validates :cpf, :crfa, :email, uniqueness: true
