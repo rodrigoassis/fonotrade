@@ -335,7 +335,7 @@ pt-BR:
       char_length_up_to: "comprimento até"
       char_length_of: "comprimento de"
       save: "Gravar"
-      save_and_add_another: "Gravar e cadastrar"
+      save_and_add_another: "Gravar e Novo"
       save_and_edit: "Gravar e editar"
       all_of_the_following_related_items_will_be_deleted: "? Os seguintes item serão apagados ou deixados orfãos:"
       are_you_sure_you_want_to_delete_the_object: "Tem a certeza que quer apagar este registro"
@@ -376,8 +376,8 @@ pt-BR:
         one: "Usuário"
         other: "Usuários"
       specialty:
-        one: "Especialidade"
-        other: "Especialidades"
+        one: "Atendimento Oferecido"
+        other: "Atendimentos Oferecidos"
       professional:
         one: "Profissional"
         other: "Profissionais"
@@ -403,7 +403,7 @@ pt-BR:
         email: Email
         crfa: CRFA
         cep: CEP
-        specialties: Especialidades
+        specialties: Atendimentos Oferecidos
         state: Estado
         city: Cidade
         address: Endereço
@@ -412,7 +412,7 @@ pt-BR:
         created_at: Criado em
         updated_at: Atualizado em
         active: Ativo
-        experiences: Cursos Realizados
+        experiences: Formação Acadêmica
       user:
         email: "Email"
         role: "Cargo"
