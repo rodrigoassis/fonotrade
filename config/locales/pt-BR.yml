@@ -375,6 +375,9 @@ pt-BR:
       user:
         one: "Usuário"
         other: "Usuários"
+      qualification:
+        one: "Nível de Formação"
+        other: "Níveis de Formação"
       specialty:
         one: "Atendimento Oferecido"
         other: "Atendimentos Oferecidos"
@@ -447,12 +450,16 @@ pt-BR:
       institution:
         name: "Nome"
         active: "Ativa"
-        courses: "Cursos"
+        experiences: "Experiências"
         created_at: "Criado em"
         updated_at: "Atualizado em"
       course:
         name: "Nome"
-        institution: "Instituição"
+        experiences: "Experiências"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      qualification:
+        name: "Nome"
         experiences: "Experiências"
         created_at: "Criado em"
         updated_at: "Atualizado em"
