@@ -21,7 +21,7 @@ class Experience < ActiveRecord::Base
   end
 
   def year_enum
-    (Date.today.year-20..Date.today.year).to_a.reverse
+    (Date.today.year-25..Date.today.year).to_a.reverse
   end
 
   rails_admin do
