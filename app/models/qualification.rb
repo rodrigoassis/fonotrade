@@ -1,4 +1,5 @@
 class Qualification < ActiveRecord::Base
+  has_many :experiences, inverse_of: :course
 
   validates :name, presence: true, uniqueness: true
 

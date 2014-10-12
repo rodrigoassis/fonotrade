@@ -2,16 +2,14 @@ class Experience < ActiveRecord::Base
 
   belongs_to :professional, inverse_of: :experiences
   belongs_to :course, inverse_of: :experiences
+  belongs_to :institution, inverse_of: :experiences
+  belongs_to :qualification, inverse_of: :experiences
 
-  validates :professional, :year, :course, presence: true
-  validates :year, presence: true, numericality: { only_integer: true, greater_than: 1000}
+  validates :professional, :year, :course, :institution, :qualification, presence: true
+  validates :year, presence: true, numericality: {only_integer: true, greater_than: 1000}
 
   def name
     course.name
-  end
-
-  def institution
-    course.institution
   end
 
   def year_enum
@@ -29,6 +27,12 @@ class Experience < ActiveRecord::Base
     end
     nested do
       configure :course do
+        inline_edit false
+      end
+      configure :institution do
+        inline_edit false
+      end
+      configure :qualification do
         inline_edit false
       end
     end

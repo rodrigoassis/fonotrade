@@ -13,6 +13,13 @@ describe Plan do
     expect(FactoryGirl.build(:experience, course: nil)).not_to be_valid
   end
 
+  it "is invalid without institution" do
+    expect(FactoryGirl.build(:experience, institution: nil)).not_to be_valid
+  end
+
+  it "is invalid without qualification" do
+    expect(FactoryGirl.build(:experience, qualification: nil)).not_to be_valid
+  end
 
   it "is invalid without year" do
     expect(FactoryGirl.build(:experience, year: nil)).not_to be_valid

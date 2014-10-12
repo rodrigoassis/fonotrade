@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :institution do
-    name "MyString"
+    sequence(:name){|n| "Institution #{n}"}
     active false
   end
 end
