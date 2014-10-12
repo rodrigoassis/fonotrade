@@ -1,5 +1,4 @@
 class Course < ActiveRecord::Base
-  belongs_to :institution, inverse_of: :courses
   has_many :experiences, inverse_of: :course
 
   validates :name, presence: true
@@ -13,11 +12,6 @@ class Course < ActiveRecord::Base
     end
     edit do
       configure :experiences do
-        hide
-      end
-    end
-    modal do
-      configure :institution do
         hide
       end
     end

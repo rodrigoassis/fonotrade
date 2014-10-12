@@ -3,6 +3,5 @@
 FactoryGirl.define do
   factory :course do
     name "MyString"
-    association :institution, factory: :institution
   end
 end
