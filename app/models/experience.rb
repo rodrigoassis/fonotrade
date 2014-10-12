@@ -8,6 +8,14 @@ class Experience < ActiveRecord::Base
   validates :professional, :year, :course, :institution, :qualification, presence: true
   validates :year, presence: true, numericality: {only_integer: true, greater_than: 1000}
 
+  after_initialize do
+    if new_record?
+      self.institution ||= Institution.first
+      self.course ||= Course.first
+      self.qualification ||= Qualification.first
+    end
+  end
+
   def name
     course.name
   end
