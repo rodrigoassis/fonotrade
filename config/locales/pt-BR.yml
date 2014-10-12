@@ -467,6 +467,7 @@ pt-BR:
         name: "Nome do Curso"
         professional: "Profissional"
         course: "Curso"
+        qualification: "Nível de Formação"
         year: "Ano de Realização"
         comments: Observações
         institution: "Instituição"

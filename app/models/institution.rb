@@ -14,5 +14,10 @@ class Institution < ActiveRecord::Base
       field :active
       field :name
     end
+    modal do
+      configure :active do
+        hide
+      end
+    end
   end
 end

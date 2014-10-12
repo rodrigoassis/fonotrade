@@ -25,15 +25,23 @@ class Experience < ActiveRecord::Base
       field :created_at
       field :updated_at
     end
+    edit do
+      field :institution
+      field :qualification
+      field :course
+      field :year
+      field :comments
+    end
     nested do
-      configure :course do
+      configure :institution do
         inline_edit false
       end
-      configure :institution do
+      configure :course do
         inline_edit false
       end
       configure :qualification do
         inline_edit false
+        inline_add false
       end
     end
   end
