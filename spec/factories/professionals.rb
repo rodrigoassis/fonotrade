@@ -12,5 +12,8 @@ FactoryGirl.define do
     state "Rio de Janeiro"
     address "MyString"
     complement "MyString"
+    graduation_year 2000
+    association :graduation_institution, factory: :institution
+    association :graduation_course, factory: :course
   end
 end

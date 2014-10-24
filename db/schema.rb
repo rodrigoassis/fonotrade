@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141012160104) do
+ActiveRecord::Schema.define(version: 20141023232003) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,8 +68,14 @@ ActiveRecord::Schema.define(version: 20141012160104) do
     t.string   "neighborhood"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "active",       default: false
+    t.boolean  "active",                    default: false
+    t.integer  "graduation_institution_id"
+    t.integer  "graduation_course_id"
+    t.integer  "graduation_year"
   end
+
+  add_index "professionals", ["graduation_course_id"], name: "index_professionals_on_graduation_course_id", using: :btree
+  add_index "professionals", ["graduation_institution_id"], name: "index_professionals_on_graduation_institution_id", using: :btree
 
   create_table "professionals_specialties", force: true do |t|
     t.integer "specialty_id"

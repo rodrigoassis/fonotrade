@@ -388,8 +388,8 @@ pt-BR:
         one: "Plano de Saúde"
         other: "Planos de Saúde"
       experience:
-        one: "Experiência"
-        other: "Experiências"
+        one: "Formação"
+        other: "Formação"
       course:
         one: "Curso"
         other: "Cursos"
@@ -415,7 +415,10 @@ pt-BR:
         created_at: Criado em
         updated_at: Atualizado em
         active: Ativo
-        experiences: Formação Acadêmica
+        experiences: Outras Formações
+        graduation_institution: Instituição de Graduação
+        graduation_course: Curso de Graduação
+        graduation_year: Ano de Graduação
       user:
         email: "Email"
         role: "Cargo"
