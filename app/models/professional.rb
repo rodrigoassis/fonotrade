@@ -51,20 +51,14 @@ class Professional < ActiveRecord::Base
       field :specialties
       group :graduation do
         label "Formação Acadêmica"
-      end
-      field :graduation_institution do
-        inline_edit false
-        group :graduation
-      end
-      field :graduation_course do
-        inline_edit false
-        group :graduation
-      end
-      field :graduation_year do
-        group :graduation
-      end
-      field :experiences do
-        group :graduation
+        field :graduation_institution do
+          inline_edit false
+        end
+        field :graduation_course do
+          inline_edit false
+        end
+        field :graduation_year
+        field :experiences
       end
     end
 
