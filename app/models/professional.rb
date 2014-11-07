@@ -12,7 +12,7 @@ class Professional < ActiveRecord::Base
 
   validates :cep, format: { with: /\A\d{5}-\d{3}\z/, message: I18n.t('errors.messages.wrong_format', correct_format: '99999-999') }
   validates :cpf, format: { with: /\A\d{3}.\d{3}.\d{3}-\d{2}\z/, message: I18n.t('errors.messages.wrong_format', correct_format: '999.999.999-99') }
-  validates :cpf, :crfa, :email, uniqueness: true
+  validates :cpf, :crfa, uniqueness: true
 
   accepts_nested_attributes_for :experiences, allow_destroy: true
 
