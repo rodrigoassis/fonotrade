@@ -55,7 +55,7 @@ describe "the user process" do
     fill_in 'Senha', with: "senha"
     fill_in 'Confirmação de Senha', with: "senha"
 
-    click_button 'Gravar'
+    click_button 'Finalizar'
     expect(page).to have_content 'sucesso'
   end
 end

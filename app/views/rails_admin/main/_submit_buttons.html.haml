@@ -4,6 +4,9 @@
     %i.icon-white.icon-ok
     = t("admin.form.save")
   %span.extra_buttons
+    - if authorized? :new, @abstract_model
+      %button.btn.btn-info{type: "submit", name: "_add_another", :'data-disable-with' => t("admin.form.save_and_add_another")}
+        = t("admin.form.save_and_add_another")
     %button.btn{type: "submit", name: "_continue", :'data-disable-with' => t("admin.form.cancel")}
       %i.icon-remove
       = t("admin.form.cancel")
