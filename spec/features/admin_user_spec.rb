@@ -6,7 +6,7 @@ describe "the user process" do
   end
 
   it "redirects me to sign in" do
-    visit "/"
+    visit "admin"
 
     expect(current_path).to eq("/users/sign_in")
   end
